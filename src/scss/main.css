@@ -27,6 +27,12 @@ body {
   background-position-x: -800px;
 }
 
+@media (max-height: 570px) {
+  body {
+    padding-top: 235px;
+  }
+}
+
 .box {
   width: 415px;
   background: white;

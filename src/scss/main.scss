@@ -19,6 +19,10 @@ body {
   background-repeat: no-repeat;
   background-position-y: -247px;
   background-position-x: -800px;
+
+  @media (max-height: 570px) {
+    padding-top: 235px;
+  }
 }
 .box {
   width: 415px;
