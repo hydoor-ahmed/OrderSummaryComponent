@@ -124,6 +124,13 @@ body {
 .box .content .container .plan a {
   font-size: 17px;
   color: #3829e0;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.box .content .container .plan a:hover {
+  color: #6c63df;
+  text-decoration: none;
 }
 
 .box .content .container .btns {
@@ -142,12 +149,18 @@ body {
   background: #3829e0;
   color: white;
   border: none;
-  padding: 12px 20px;
+  padding: 15px 20px;
   border-radius: 10px;
   font-size: 14px;
   -webkit-box-shadow: 0 10px 20px 0px #3829e06b;
           box-shadow: 0 10px 20px 0px #3829e06b;
   font-weight: bold;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.box .content .container .btns button:first-child:hover {
+  background: #766cf1;
 }
 
 .box .content .container .btns button:last-child {
@@ -155,8 +168,14 @@ body {
   border: none;
   color: #7280a7;
   margin-bottom: 20px;
-  padding: 12px 20px;
+  padding: 15px 20px;
   font-size: 14px;
   font-weight: bold;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.box .content .container .btns button:last-child:hover {
+  color: #42485c;
 }
 /*# sourceMappingURL=main.css.map */

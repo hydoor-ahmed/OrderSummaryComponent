@@ -87,6 +87,12 @@ body {
         a {
           font-size: 17px;
           color: $brightblue;
+          transition: .3s;
+
+          &:hover {
+            color: #6c63df;
+            text-decoration: none;
+          }
         }
       }
       .btns {
@@ -98,20 +104,30 @@ body {
           background: #3829e0;
           color: white;
           border: none;
-          padding: 12px 20px;
+          padding: 15px 20px;
           border-radius: 10px;
           font-size: 14px;
           box-shadow: 0 10px 20px 0px #3829e06b;
           font-weight: bold;
+          transition: .3s;
+
+          &:hover {
+            background: #766cf1;
+          }
         }
         button:last-child {
           background: transparent;
           border: none;
           color: $desaturatedblue;
           margin-bottom: 20px;
-          padding: 12px 20px;
+          padding: 15px 20px;
           font-size: 14px;
           font-weight: bold;
+          transition: .3s;
+
+          &:hover {
+            color: #42485c;
+          }
         }
       }
     }
