@@ -11,6 +11,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   width: 100%;
   height: 100vh;
   background: $blue;
@@ -25,13 +26,15 @@ body {
   }
 }
 .box {
-  width: 415px;
+  max-width: 415px;
   background: white;
   margin: 0 auto;
   text-align: center;
   border-radius: 15px;
   overflow: hidden;
   margin: 0 15px;
+  margin-bottom: 10px;
+  min-height: 661px;
 
   .content {
     display: flex;
@@ -70,10 +73,10 @@ body {
           width: 50px;
           margin-left: 10px;
         }
+        $fontsize: 16px;
         .planname {
           display: flex;
           flex-direction: column;
-
           margin-right: auto;
           margin-left: 14px;
           h2 {
@@ -81,17 +84,27 @@ body {
             font-size: 19px;
             color: #1f2f56;
             font-weight: bolder;
+
+            @media (max-width: 345px) {
+              font-size: $fontsize;
+            }
           }
           span {
             color: $desaturatedblue;
             font-size: 18px;
             margin-top: 2px;
+            @media (max-width: 345px) {
+              font-size: $fontsize;
+            }
           }
         }
         a {
           font-size: 17px;
           color: $brightblue;
           transition: .3s;
+          @media (max-width: 345px) {
+            font-size: $fontsize;
+          }
 
           &:hover {
             color: #6c63df;
